@@ -1,0 +1,57 @@
+\\\\\\ v1.11\\\\\\\\\\\\\\\
+** General **
+Added logo icon to title bar so it is no longer blank.
+Updated Phone number, was a typo
+
+\\\\\\\\ v1.1 \\\\\\\\\\\\\\
+** NAV BAR **
+- Added Logo
+- Moved navbar text
+- Removed Tagline
+- Changed "Phone" beside phone number to "Contact" like the other pages
+
+** HEAD **
+- Changed title of pages to reflect actual page names
+- Changed all titles from ZF Computer Repair to ZF Computer Services - [Page name]
+
+** LOGO **
+- Redid logo to better match text of website
+- Made a while and black text version of the logo
+
+** General **
+- Redid the responsiveness of the website, had to move and resize logo and nav menu for all sizes
+- Resized phone number for all sizes as well
+- Better consistency on layout on all screen sizes.
+- Cleaned up style.css and removed .zf,.cs,.tagline from it completley
+- .zf,.cs,.tagline were replaced by .logo
+- Cleaned up notes on whole document
+
+// UPLOADED TO LIVE BRANCH ON 5/16/2021 at 4:37 PM //
+
+\\\\\ v1.2 \\\\\\\\\\\\\\\
+
+&& ALL PAGES && 
+
+** GENERAL **
+Followed the Front-End-Checklist at https://github.com/thedaviddias/Front-End-Checklist#how-to-use
+Cleaned up code, checked spacing and made code more readable
+
+** HEAD **
+Added <description> to index,aboutme,contact pages
+Made Head section easier to read with spacing and notes
+moved charset, and viewport to top of head where it needs to beside
+Added Apple Web App meta tags
+Added Microsoft Tiles and browserconfig.xml
+Added Canonical Link for seo & help with duplicates
+
+&&& INDEX &&&
+
+** HOURS **
+Changed it from <p>s to a UL.
+Made the UL, align to the left and set the padding to the list would line up properly
+Added responsiveness to the hours of operation
+
+&&& ABOUT ME &&&
+** SERVICES AND PRODUCTS **
+Made the text line to the left to lineup properly, and added responsiveness
+
