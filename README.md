@@ -6,12 +6,12 @@ This is my first major project, and is being updated by me very frequently. I am
 
 This website is designed as an informative small business website for ZF Computer Services. This project is made out of just HTML and CSS, no JS. It is fully responsive, and has been tested on all major browsers.
 
-Current Features:
-Email Link to send a ticket or inquiry to ZF Computer Services
-Information about the business, and services rendered
+Current Features:<br>
+Email Link to send a ticket or inquiry to ZF Computer Services<br>
+Information about the business, and services rendered<br>
 
-Roadmap:
-Update Logo
-Add custom form for a ticket system to a tech support email
-Shrink text and make it look better on desktop devices
-Confirm compatibility with Safari & Firefox
+Roadmap:<br>
+Update Logo<br>
+Add custom form for a ticket system to a tech support email<br>
+Shrink text and make it look better on desktop devices<br>
+Confirm compatibility with Safari & Firefox<br>
