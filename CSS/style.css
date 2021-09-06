@@ -47,11 +47,14 @@ footer {
 	font-family: 'Bebas Neue', cursive;
 	color: white;
 	text-decoration: none;
-	margin-top:130%;
 	white-space:nowrap;
 }
 .navbutton:hover {
 	color: #49342F;
+}
+.navspacer, .navbutton {
+	display: flex;
+	margin-top: 62%;
 }
 /* End of Navigation Buttons */
 
@@ -67,7 +70,7 @@ footer {
 .logo img {
 	min-width: 0%;
 	max-width: 100%;
-	margin-top: 38%;
+	margin-right: 25%;
 }
 .phonenumber {
 	font-size:3vw;
@@ -133,7 +136,7 @@ nav, .services {
 	display:flex;
 	flex-direction:column;
 	align-content: center;
-	margin-right: 10%;
+	margin-right: 3%;
 }
 #hours li {
 	list-style-type: none;
