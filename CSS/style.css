@@ -1,158 +1,30 @@
-/* Website was coded for 320PX Width */
-nav {
-	display: flex;
-	justify-content: space-between;
-	width:90%;
-	height:50%;
-}
+/* ----- THIS IS STYLED FOR MOBILE FIRST AT 320x400 ----*/
 
+/* ----- GLOBAL SELECTORS ----- */
 body {
-	height:100vh;
+	background-color: #2156A1;
 	margin: 0;
-	font-family: 'Bebas Neue', cursive;
-	text-align: center;
-	font-size: 3vw;
-	background-image: url("../Resources/zfbackground.jpg");
-	background-size:cover;
-	background-color: #FEBF3C;
-	color: white;
-	background-repeat: no-repeat;
-	text-shadow: 1px 1px black;
-	height: auto;
-	width: auto;
 }
 
-h1 {
-	font-size: 5vw;
-	text-shadow: 1px 1px #49342F;
-}
-
-h2 {
-	font-size: 7vw;
-	text-shadow: 1px 1px #49342F;
-}
-
-footer {
-	text-align: left;
-}
-
-/* End of Globals */
-
-/* Start Navigation Buttons */
-.navselect {
-	display:flex;
-	flex-direction:row;
-}
-.navbutton {
-	font-family: 'Bebas Neue', cursive;
-	color: white;
-	text-decoration: none;
-	white-space:nowrap;
-}
-.navbutton:hover {
-	color: #49342F;
-}
-.navspacer, .navbutton {
+/* ----- HEADER SELECTORS ---- */
+header {
 	display: flex;
-	margin-top: 62%;
+	flex-direction: row;
+	border-bottom: 5px solid white;
+	padding: 1%;
 }
-/* End of Navigation Buttons */
-
-/* This helps the logo and navbar align properly */
-.navbutton, .logo {
-	display:flex;
-}
-
-/* Start Logo/Phone number in nav bar */
-.logo {
-	text-align: right;
-}
-.logo img {
-	min-width: 0%;
-	max-width: 100%;
-	margin-right: 25%;
-}
-.phonenumber {
-	font-size:3vw;
-	white-space:nowrap;
-}
-/* End of Logo/Phone Number in Navigation bar */
-
-/* Start Laptop/Computer/Cellphone Pics and Text*/
-
-.services {
-	display: flex;
-	justify-content: space-between;
-	text-align:center;
-	position:relative;
-	height:100%;
+.navmenu {
+	list-style:none
 }
 
-.services img {
-	margin-top: 3rem;
-	height: auto;
-	min-width: 1%;
-	max-width: 93%;
-	border-color: #FEBF3C;
-	border-style: solid;
-	border-radius: 50%;
-}
-.piccontainer {
-	display: flex;
-	position:relative;
-}
-.imgtext {
-	position: absolute;
-	font-size:4.5vw;
-	bottom: 20%;
-	left: 10%;
-	white-space:nowrap;
-}
-#lrimg {
-	left: 17%;
-}
-#crimg {
-	right: 90%;
-}
-.imgtext, .servimg {
-	display:flex;
-}
-/* End Laptop/Computer/Cellphone Pics and Text */
-
-nav, .services {
-	display: flex;
-	justify-content: column;
+/* ----- INDEX.HTML SECTION SELECTORS -----*/
+#services-list {
+	background-color: white;
+	padding: 8vh;
 }
 
-/* Start of Services and Products on About Me Page */
-#ServAndProduct {
-	text-align: left;
-}
-#ServAndProduct li {
-	margin-left: 30%;
-}
-/* Start of Hours of Operation */
-#hours {
-	display:flex;
-	flex-direction:column;
-	align-content: center;
-	margin-right: 3%;
-}
-#hours li {
-	list-style-type: none;
-}
-/* End of Hours of Operation */
-/* Start of Footer Text */
-.foottext {
-	font-size: 2vw;
-} 
-/* Start Of Email Link Styling */
+/* ----- INDEX.HTML BUTTON SELECTORS ----- */
+#learn-more-button {
+	position:sticky;
 
-.emaillink {
-	color: #FEBF3C;
-	text-decoration: none;
-}
-
-.emaillink:hover {
-	color: #49342F;
 }
