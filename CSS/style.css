@@ -28,3 +28,13 @@ header {
 	position:sticky;
 
 }
+
+/* ----- SERVICES.HTML SERVICE SECTION ----- */
+#services {
+	background-image: url('/Resources/repairing-networks.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-color: rgba(196,196,196,85%);
+	background-blend-mode: exclusion;
+	margin-top: 0%;
+}

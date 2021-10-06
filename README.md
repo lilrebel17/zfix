@@ -22,13 +22,13 @@
 ## Roadmap
 ### 1. HTML Skeletons
 * [X] landing.html 
-* [ ] services.html 
+* [X] services.html 
 * [ ] home.html 
-* [ ] contact.html 
-* [ ] mission.html 
+* [X] contact.html 
+* [X] mission.html 
 
 ### 2. HTML Accessability 
-* [X] landing.html 
+* [ ] landing.html 
 * [ ] services.html 
 * [ ] home.html 
 * [ ] contact.html 
