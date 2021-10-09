@@ -34,9 +34,6 @@
 * [ ] contact.html 
 * [ ] mission.html 
 
-### 3. Feature Completion
-* [ ] Ticketing System
-
 ### 4. CSS
 * [ ] landing.html 
 * [ ] services.html 
