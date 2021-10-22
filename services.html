@@ -28,17 +28,33 @@
 	<!-- Links my CSS Style Sheet-->
 	<link href="./CSS/style.css" rel="stylesheet">
 
+	<!-- Links to my JS -->
+	<script src='./JS/mobile-menu.js'></script>
+
 </head>
 <body>
 	<header>
 
-		<img 
+		<img
+		id='ZF-LOGO' 
 		src='./Resources/zf-computer-services-header-239x55.png' 
 		alt='ZF Computer Services | PC Repair & Tech Support' 
 		title ='ZF Computer Services'>
 
 		<nav>
-			<ul class='nav-menu-options'>
+			<button id ='closed_menu'>
+				<img
+				id='closed-menu'
+				src='./Resources/nav-menu-closed-white.png'
+				alt='Navigation menu'
+				Title='Navigation menu'>
+			</button>
+			<ul id='nav-menu-options'>
+				<li id ='closing-x'>
+					<a>
+						X
+					</a>
+				</li>
 				<li>
 					<a href='home.html'
 					tabindex='1'>
@@ -116,7 +132,7 @@
 			<ul 
 			id='networking-left'
 			class='networking-services-list'>
-				<li>Wifi Diagnosis & Repair</li>
+				<li>Wifi Issues</li>
 				<li>Equipment Installs</li>
 				<li>Cabling Installation</li>
 				<li>Commercial Solutions</li>
@@ -159,24 +175,30 @@
 	</div>
 	</section>
     <footer>
-		<p>Zachary Farmer DBA<br> 
-			ZF Computer Services</p>
+        <p>Zachary Farmer DBA<br> 
+            ZF Computer Services</p>
         <div id='footer-container'>
-        <img 
-        class='footer-icons'
-        src='./Resources/gmail-icon.png'
-        alt='Black Email Icon'
-        title='Email Icon'>
-        <img
-        class='footer-icons'
-        src='./Resources/phone-icon.png'
-        alt='Black Phone Icon'
-        title='Phone Icon'>
-        <img 
-        class='footer-icons'
-        src='./Resources/facebook-icon.png'
-        alt='Facebook Icon'
-        title='Facebook Icon'>
+		<a href='mailto:zfcomputerservices@gmail.com'>
+			<img 
+			class='footer-icons'
+			src='./Resources/gmail-icon.png'
+			alt='Black Email Icon'
+			title='Send us an Email'>
+		</a>
+		<a href='tel:8644040591'>
+			<img
+			class='footer-icons'
+			src='./Resources/phone-icon.png'
+			alt='Black Phone Icon'
+			title='Give us a call at (864)404-0591'>
+		</a>
+		<a href='https://www.facebook.com/zfcomputerservices'>
+			<img 
+			class='footer-icons'
+			src='./Resources/facebook-icon.png'
+			alt='Facebook Icon'
+			title='Check us out on facebook @zfcomputerservices'>
+		</a>
         </div>
 	</footer>
 </body>

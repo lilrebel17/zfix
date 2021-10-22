@@ -39,11 +39,20 @@
 
 ### 4. CSS
 
-* [X] landing.html
-* [X] services.html
-* [X] home.html
-* [X] contact.html
-* [X] mission.html
+1. [ ] Mobile Version
+   * [X] landing.html
+   * [X] services.html
+   * [X] home.html
+   * [X] contact.html
+   * [X] mission.html
+
+1. [ ] Desktop Version
+   * [ ] landing.html
+   * [ ] services.html
+   * [ ] home.html
+   * [ ] contact.html
+   * [ ] mission.html
+
 * [ ] Fully Responsive
 
 ### 5. Cleanup
