@@ -20,29 +20,34 @@
     * Complete Front-End Checklist 
 
 ## Roadmap
-### 1. HTML Skeletons
-* [X] landing.html 
-* [X] services.html 
-* [ ] home.html 
-* [X] contact.html 
-* [X] mission.html 
 
-### 2. HTML Accessability 
-* [ ] landing.html 
-* [ ] services.html 
-* [ ] home.html 
-* [ ] contact.html 
-* [ ] mission.html 
+### 1.HTML Skeletons
+
+* [X] landing.html
+* [X] services.html
+* [X] home.html
+* [X] contact.html
+* [X] mission.html
+
+### 2. HTML Accessability
+
+* [ ] landing.html
+* [ ] services.html
+* [ ] home.html
+* [ ] contact.html
+* [ ] mission.html
 
 ### 4. CSS
-* [ ] landing.html 
-* [ ] services.html 
-* [ ] home.html 
-* [ ] contact.html 
-* [ ] mission.html 
+
+* [X] landing.html
+* [X] services.html
+* [X] home.html
+* [X] contact.html
+* [X] mission.html
 * [ ] Fully Responsive
 
 ### 5. Cleanup
+
 * [ ] Code Cleanup
 * [ ] Browser Compatability Testing
 * [ ] Front End Checklist Completion
