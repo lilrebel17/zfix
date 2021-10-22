@@ -21,7 +21,7 @@
 
 ## Roadmap
 
-### 1.HTML Skeletons
+### 1. HTML Skeletons
 
 * [X] landing.html
 * [X] services.html
@@ -39,7 +39,7 @@
 
 ### 4. CSS
 
-1. [ ] Mobile Version
+1. [X] Mobile Version
    * [X] landing.html
    * [X] services.html
    * [X] home.html
