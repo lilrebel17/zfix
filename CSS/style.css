@@ -80,15 +80,21 @@ header {
 footer {
 	padding: 2%;
 	padding-bottom: 0%;
-	font-size: x-small;
+	font-size: 2vw;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
+	background-color:#2156A1;
 }
+
+footer a {
+	color:#2156A1;
+}
+
 .footer-icons {
-	width: 25px;
-	height: 25px;
+	width: 6vw;
+	height: 5vh;
 }
 
 /* ----- INDEX.HTML ----- */
@@ -347,4 +353,5 @@ footer {
 	background-color: white;
 	padding: 10%;
 	height: 80vh;
+	text-align: center;
 }
