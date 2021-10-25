@@ -28,45 +28,61 @@
 	<!-- Links my CSS Style Sheet-->
 	<link href="./CSS/style.css" rel="stylesheet">
 
+	<!-- Links to my JS -->
+	<script src='./JS/mobile-menu.js'></script>
+
 </head>
 <body>
-	<header>
+		<header>
 
-		<img 
-		src='./Resources/zf-computer-services-header-239x55.png' 
-		alt='ZF Computer Services | PC Repair & Tech Support' 
-		title ='ZF Computer Services'>
-
-		<nav>
-			<ul class='navmenu'>
-				<li>
-					<a href='home.html'
-					tabindex='1'>
-						Home
-					</a>
-				</li>
-				<li>
-					<a href='services.html'
-					tabindex='2'>
-						Services
-					</a>
-				</li>
-				<li>
-					<a href='contact.html'
-					tabindex='3'>
-						Contact
-					</a>
-				</li>
-				<li>
-					<a href='mission.html'
-					tabindex='4'>
-						Our Mission
-					</a>
-				</li>
-			</ul>
-		</nav>
-
-	</header>
+			<img
+			id='ZF-LOGO' 
+			src='./Resources/zfcs-header-1200x675.png' 
+			alt='ZF Computer Services | PC Repair & Tech Support' 
+			title ='ZF Computer Services'>
+	
+			<nav>
+				<button id ='closed_menu'>
+					<img
+					id='closed-menu'
+					src='./Resources/nav-menu-closed-white.png'
+					alt='Navigation menu'
+					Title='Navigation menu'>
+				</button>
+				<ul id='nav-menu-options'>
+					<li id ='closing-x'>
+						<a>
+							X
+						</a>
+					</li>
+					<li>
+						<a href='home.html'
+						tabindex='1'>
+							Home
+						</a>
+					</li>
+					<li>
+						<a href='services.html'
+						tabindex='2'>
+							Services
+						</a>
+					</li>
+					<li>
+						<a href='contact.html'
+						tabindex='3'>
+							Contact
+						</a>
+					</li>
+					<li>
+						<a href='mission.html'
+						tabindex='4'>
+							Our Mission
+						</a>
+					</li>
+				</ul>
+			</nav>
+	
+		</header>
 
 	<section>
 		<h1>What Can ZF-CS do for you?</h1>
@@ -80,16 +96,11 @@
 		</ul>
 	</section>
 	<div>
-		<a href='#services.html' 
-		id='learn-more-button'
-		tabindex='5'>
-			<button>
+			<a href='services.html'
+			id='learn-more'>
 				Click here to learn more
-			</button>
+			</a>
 		</a>
 	</div>
-	<footer>
-		<p>Copyright © 2021 ZF Computer Services</p>
-	</footer>
 </body>
 </html>

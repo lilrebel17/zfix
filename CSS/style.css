@@ -8,6 +8,7 @@
 body {
 	background-color: #2156A1;
 	margin: 0;
+	height: 100vh;
 }
 
 h1, h2 {
@@ -86,6 +87,7 @@ footer {
 	align-items: center;
 	justify-content: space-between;
 	background-color:#2156A1;
+	padding-top: 40%;
 }
 
 footer a {
@@ -102,12 +104,17 @@ footer a {
 /* ----- SECTION SELECTORS ----- */
 #services-list {
 	background-color: white;
-	padding: 8vh;
+	padding: 10vh;
+	margin: 0%;
 }
 
 /* ----- LEARN MORE BUTTON ----- */
-#learn-more-button {
-	position:sticky;
+#learn-more {
+	background-color: gray;
+	padding: 3%;
+	text-decoration: none;
+	box-shadow: 0px 0px 20px black;
+	margin-left: 4%;
 }
 
 /* ---- HOME.HTML ----- */
