@@ -1,6 +1,20 @@
 # ZF Computer Services (ZF-CS)
- ZF Computer Services or ZF-CS is a small at home IT business based in South Carolina. 
+
+ ZF Computer Services or ZF-CS is a small at home Electronics Repair & IT Business based in South Carolina
  Full design & development.
+
+## Project Overview
+
+1. Create a website, for a small at home IT/Electronics repair business.
+1. Make the design simplistic
+1. Keep the color scheme in line with the logo
+1. Different Mobile & Desktop versions
+1. Fully Responsive
+1. Make it fully screen reader accessible
+1. Focus on SEO
+1. Make it easily editable for wide changes
+
+## The Process
 
  1. Skeletons
     * Creating the HTML Skeletons

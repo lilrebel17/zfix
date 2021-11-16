@@ -4,32 +4,41 @@
 /* ----- ROBOTO: BLACK ITALIC & REGULAR | LATO: LIGHT & REGULAR */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto:ital,wght@0,400;1,900&display=swap');
 
+/* ---- Custom Properties ----- */
+:root {
+	--main-bg-clr: #2156A1;
+	--fnt-hdr-clr: white;
+	--fnt-bdy-clr: black;
+	--hdr-font-400: 'Lato', sans-serif;
+	--bdy-font-400: 'Roboto', sans-serif;
+}
+
 /* ----- GLOBAL SELECTORS ----- */
 body {
-	background-color: #2156A1;
+	background-color: var(--main-bg-clr);
 	margin: 0;
 	height: 100vh;
 }
 
 h1, h2 {
-	color: white;
+	color: var(--fnt-hdr-clr);
 	text-align: center;
-	font-family: 'Roboto', sans-serif;
+	font-family: var(--hdr-font-400);
 	font-size: 5vw;
 }
 
 p {
-	font-family: 'Lato', sans-serif;
+	font-family: var(--bdy-font-400)
 }
 
 li {
-	font-family: 'Lato', sans-serif;
+	font-family: var(--hdr-font-400);
 	font-weight: 300;
 	font-size: 3.5vw;
 }
 
 a {
-	font-family: 'Lato', sans-serif;
+	font-family: var(--bdy-font-400);
 	color: white;
 }
 ul {
@@ -86,17 +95,16 @@ footer {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	background-color:#2156A1;
-	padding-top: 40%;
+	background-color: var(--main-bg-clr);
+	padding-top: 5%;
 }
 
 footer a {
-	color:#2156A1;
+	color:var(--main-bg-clr);
 }
 
 .footer-icons {
-	width: 6vw;
-	height: 5vh;
+	width: calc((17vw / 3))
 }
 
 /* ----- INDEX.HTML ----- */
@@ -120,6 +128,15 @@ footer a {
 /* ---- HOME.HTML ----- */
 
 /* ----- ZF-CF WELCOME SECTION ----- */
+
+#logo {
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+}
+
 #welcome-container {
 	background-image:url('/Resources/skyscrapers.jpg');
 	background-repeat: no-repeat;
@@ -201,14 +218,7 @@ footer a {
 /* ----- HEADER SECTION  ----- */
 #services {
 	background-image:url('/Resources/repairing-networks.jpg');
-	background-size: cover;
-	text-decoration: none;
-	font-size: xx-large;
-	text-align: center;
-	background-color: rgba(180,180,180,.90);
-	background-blend-mode:saturation;
-	transition-duration:1s;
-	font-weight: 900;
+	flex-direction: column;
 }
 #services a, #services h1 {
 	display: flex;
@@ -235,6 +245,7 @@ footer a {
 	width: 40%;
 	text-align:center;
 	margin-left:27vw;
+	white-space: nowrap;
 }
 #services a:hover {
 	background-color: rgba(170, 170, 170);
@@ -247,54 +258,52 @@ footer a {
 }
 
 /* ----- PC REPAIR SECTION ----- */
-#pc-repair-lists-container {
+.pc-repair-container {
 	background:url('/Resources/pc-being-repaired.jpg');
-	background-size: cover;
-	background-color: rgba(180,180,180,.90);
-	background-blend-mode:saturation;
-	background-position-y: 50%;
 	display: flex;
-	padding: 5%;
+	padding: 10%;
 	justify-content: center;
+	white-space: nowrap;
 }
 
 /* ----- NETWORKING SECTION ----- */
-#networking-list-container {
+.networking-list-container {
 	background:url('/Resources/server-room-networking-equipment.jpeg');
-	background-size: cover;
-	background-color: rgba(180,180,180,.90);
-	background-blend-mode:saturation;
-	background-position-y: 50%;
 	display: flex;
-	padding: 5%;
+	padding: 10%;
 	justify-content: center;
+	white-space: nowrap;
 }
 
 /* ----- OTHER SECTION ----- */
-#other-list-container {
+.other-list-container {
 	background:url('/Resources/pc-being-repaired.jpg');
+	display: flex;
+	padding: 10%;
+	justify-content: center;
+	white-space: nowrap;
+}
+
+/* ---- GRAY FILTER ON BACKGROUND IMAGES ----- */
+.bg-img-gry-filter {
 	background-size: cover;
 	background-color: rgba(180,180,180,.90);
 	background-blend-mode:saturation;
-	background-position-y: 50%;
-	display: flex;
-	padding: 5%;
-	justify-content: center;
 }
 
 /* ----- CONTACTS.HTML ----- */
 
 /* ----- HEADER ----- */
-#direct-contact-header-container {
+.direct-contact-header-container { 
 	background:url('/Resources/contact-us.jpg');
+	padding: 2%;
+	background-position-y: 10%;
 	background-size: cover;
 	background-color: rgba(180,180,180,.90);
 	background-blend-mode:saturation;
-	background-position-y: 50%;
-	display: flex;
-	padding: 5%;
-	justify-content: center;
 }
+
+
 #direct-contact-header-container h1{
 	margin: 1%;
 }
