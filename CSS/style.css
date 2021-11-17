@@ -142,7 +142,7 @@ footer a {
 }
 
 #welcome-container {
-	background-image:url('/Resources/skyscrapers.jpg');
+	background-image:url('./Resources/skyscrapers.jpg');
 	background-repeat: no-repeat;
 	padding: 10%;
 }
@@ -184,14 +184,14 @@ footer a {
 }
 
 #service-home-button {
-	background-image:url('/Resources/repairing-networks.jpg');
+	background-image:url('./Resources/repairing-networks.jpg');
 }
 #contact-home-button {
-	background-image:url('/Resources/contact-us.jpg');
+	background-image:url('./Resources/contact-us.jpg');
 	background-position-y: 60%;
 }
 #mission-home-button {
-	background-image:url('/Resources/our-mission.jpg');
+	background-image:url('./Resources/our-mission.jpg');
 	background-position-y: 20%;
 }
 
@@ -216,7 +216,7 @@ footer a {
 
 /* ----- HEADER SECTION  ----- */
 #services {
-	background-image:url('/Resources/repairing-networks.jpg');
+	background-image:url('./Resources/repairing-networks.jpg');
 	flex-direction: column;
 }
 #services a, #services h1 {
@@ -258,7 +258,7 @@ footer a {
 
 /* ----- PC REPAIR SECTION ----- */
 .pc-repair-container {
-	background:url('/Resources/pc-being-repaired.jpg');
+	background:url('./Resources/pc-being-repaired.jpg');
 	display: flex;
 	padding: 10%;
 	justify-content: center;
@@ -267,7 +267,7 @@ footer a {
 
 /* ----- NETWORKING SECTION ----- */
 .networking-list-container {
-	background:url('/Resources/server-room-networking-equipment.jpeg');
+	background:url('./Resources/server-room-networking-equipment.jpeg');
 	display: flex;
 	padding: 10%;
 	justify-content: center;
@@ -276,7 +276,7 @@ footer a {
 
 /* ----- OTHER SECTION ----- */
 .other-list-container {
-	background:url('/Resources/pc-repair.jpg');
+	background:url('./Resources/pc-repair.jpg');
 	display: flex;
 	padding: 10%;
 	justify-content: center;
@@ -294,7 +294,7 @@ footer a {
 
 /* ----- HEADER ----- */
 .direct-contact-header-container { 
-	background:url('/Resources/contact-us.jpg');
+	background:url('./Resources/contact-us.jpg');
 	padding: 2%;
 	background-position-y: 10%;
 }
@@ -348,7 +348,7 @@ footer a {
 
 /* ----- MISSION.HTML ----- */
 .mission-header {
-	background:url('/Resources/our-mission.jpg');
+	background:url('./Resources/our-mission.jpg');
 	background-position-y: 50%;
 	display: flex;
 	padding: 5%;
