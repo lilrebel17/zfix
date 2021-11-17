@@ -74,3 +74,9 @@
 * [ ] Code Cleanup
 * [ ] Browser Compatability Testing
 * [ ] Front End Checklist Completion
+
+### Current Focus
+
+* Continuing to remove ids as ive found they just make the whole thing a bit messy and hard to edit
+* Adding custom properties for things I have been using a lot, like swapping background colors or text colors
+* Revising a lot of the documents at the moment as I found a much better way to keep everything readable & streamline a lot of lines of code. This will also help improve load times for lower end devices or worsening connections.

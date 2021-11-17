@@ -6,50 +6,55 @@
 
 /* ---- Custom Properties ----- */
 :root {
-	--main-bg-clr: #2156A1;
+	--hdr-bg-clr: #2156A1;
+	--sct-bg-clr: white;
 	--fnt-hdr-clr: white;
 	--fnt-bdy-clr: black;
-	--hdr-font-400: 'Lato', sans-serif;
-	--bdy-font-400: 'Roboto', sans-serif;
+	--a-tag-clr: #2156A1;
+	--hdr-font: 'Lato', sans-serif;
+	--bdy-font: 'Roboto', sans-serif;
 }
 
 /* ----- GLOBAL SELECTORS ----- */
 body {
-	background-color: var(--main-bg-clr);
+	background-color: var(--hdr-bg-clr);
 	margin: 0;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 h1, h2 {
 	color: var(--fnt-hdr-clr);
 	text-align: center;
-	font-family: var(--hdr-font-400);
+	font-family: var(--hdr-font);
 	font-size: 5vw;
 }
 
 p {
-	font-family: var(--bdy-font-400)
+	font-family: var(--bdy-font);
+	font-size: 4vw;
 }
 
 li {
-	font-family: var(--hdr-font-400);
+	font-family: var(--hdr-font);
 	font-weight: 300;
-	font-size: 3.5vw;
+	font-size: 3vw;
+	line-height: 5vh;
 }
 
 a {
-	font-family: var(--bdy-font-400);
-	color: white;
+	font-family: var(--bdy-font);
+	color: var(--a-tag-clr);
+	font-size: 4vw;
 }
 ul {
-	line-height: 180%;
+	line-height: 150%;
 }
+
 /* ----- HEADER SELECTORS ---- */
 header {
 	display: flex;
 	flex-direction: row;
 	padding: 1%;
-	font-size: x-small;
 	justify-content: space-between;
 }
 
@@ -67,7 +72,7 @@ header {
 	top: 0%;
 	white-space:nowrap;
 	font-size: 4vw;
-	background-color: #153868;
+	background-color: var(--hdr-bg-clr);
 	padding: 5.5%;
 	margin: 0%;
 	display: none;
@@ -76,31 +81,31 @@ header {
 }
 #nav-menu-options a {
 	text-decoration: none;
+	color:var(--fnt-hdr-clr)
 }
 
 #closed_menu {
-	background-color:#2156A1;
+	background-color:var(--hdr-bg-clr);
 	border: none;
 }
-
+#closed_menu img {
+	width: 8vw;
+}
 #closing-x {
 	text-align: right;
 }
 /* ----- FOOTER SELECTORS ----- */
 footer {
-	padding: 2%;
-	padding-bottom: 0%;
+	padding: 5% 1% 0% 1%;
 	font-size: 2vw;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	background-color: var(--main-bg-clr);
-	padding-top: 5%;
 }
 
 footer a {
-	color:var(--main-bg-clr);
+	color:var(--hdr-bg-clr);
 }
 
 .footer-icons {
@@ -111,7 +116,6 @@ footer a {
 
 /* ----- SECTION SELECTORS ----- */
 #services-list {
-	background-color: white;
 	padding: 10vh;
 	margin: 0%;
 }
@@ -140,9 +144,6 @@ footer a {
 #welcome-container {
 	background-image:url('/Resources/skyscrapers.jpg');
 	background-repeat: no-repeat;
-	background-size: cover;
-	background-color: rgba(140, 140, 140, 0.85);
-	background-blend-mode: saturation;
 	padding: 10%;
 }
 
@@ -150,7 +151,6 @@ footer a {
 	text-align: center;
 	margin-top: 3%;
 	color: white;
-	font-size:3vw;
 
 }
 
@@ -167,6 +167,7 @@ footer a {
 }
 #home-buttons-container a {
 	padding: 5%;
+	color: var(--fnt-hdr-clr)
 }
 .home-button {
 	background-size: cover;
@@ -196,7 +197,6 @@ footer a {
 
 /* FEES & PRICING SECTION ---- */
 #pricing-list {
-	background-color: white;
 	padding: 10%;
 }
 
@@ -206,7 +206,6 @@ footer a {
 
 /* ----- WARRANTY SECTION ----- */
 #warranty-container {
-	background-color: white;
 	padding: 5%;	
 	text-align: center;
 }
@@ -277,7 +276,7 @@ footer a {
 
 /* ----- OTHER SECTION ----- */
 .other-list-container {
-	background:url('/Resources/pc-being-repaired.jpg');
+	background:url('/Resources/pc-repair.jpg');
 	display: flex;
 	padding: 10%;
 	justify-content: center;
@@ -298,9 +297,6 @@ footer a {
 	background:url('/Resources/contact-us.jpg');
 	padding: 2%;
 	background-position-y: 10%;
-	background-size: cover;
-	background-color: rgba(180,180,180,.90);
-	background-blend-mode:saturation;
 }
 
 
@@ -310,13 +306,11 @@ footer a {
 
 /* ----- HOURS OF OPERATION ----- */
 #contact-main-container{
-	background-color: white;
 	display:flex;
 	flex-direction: column;
 }
 .contact-icon {
-	width: 35px;
-	height: 35px;
+	width: 9vw;
 }
 
 #contact-hours-container {
@@ -330,14 +324,13 @@ footer a {
 	padding: 5%;
 }
 .contact-info-container a{
-	color:#2156A1;
+	color:var(--a-tag-clr);
 	text-decoration: none;
 	padding: 3%;
 }
 
 /* ----- SOCIAL MEDIA ----- */
 #social-media-container{
-	background-color: white;
 	padding: 3%;
 	text-align: center;
 }
@@ -348,17 +341,14 @@ footer a {
 	padding: 3%;
 }
 #facebook-sm-container a{
-	color:#2156A1;
+	color:var(--a-tag-clr);
 	text-decoration: none;
 	padding: 3%;
 }
 
 /* ----- MISSION.HTML ----- */
-#mission-header {
+.mission-header {
 	background:url('/Resources/our-mission.jpg');
-	background-size: cover;
-	background-color: rgba(180,180,180,.90);
-	background-blend-mode:saturation;
 	background-position-y: 50%;
 	display: flex;
 	padding: 5%;
@@ -366,8 +356,53 @@ footer a {
 	margin: 0%;
 }
 #mission-statement {
-	background-color: white;
-	padding: 10%;
-	height: 80vh;
+	padding: 5% 15% 5% 15%;
+	margin-bottom: 0%;
 	text-align: center;
+}
+
+#how-sct {
+	text-align: center;
+	padding: 5% 15% 5% 15%;
+}
+/* ----- GLOBAL CLASSES ----- */
+.bg-img-gry-filter {
+	background-size: cover;
+	background-color: rgba(180,180,180,.90);
+	background-blend-mode:saturation;
+}
+
+.bg-blue {
+	background-color:var(--hdr-bg-clr);
+}
+
+.bg-white {
+	background-color:var(--sct-bg-clr);
+}
+.fnt-clr-black {
+	color:black;
+}
+
+@media screen and (min-width: 500px) {
+	p {
+		font-size: 3vw;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	p {
+		font-size: 2vw;
+	}
+}
+
+@media screen and (min-width: 1500px) {
+	p{
+		font-size: 1.5vw;
+	}
+	li {
+		font-size:2vw
+	}
+	a {
+		font-size: 2vw;
+	}
 }
