@@ -1,408 +1,294 @@
-/* ----- THIS IS STYLED FOR MOBILE FIRST AT 360x400 ----*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
 
-/* ----- GOOGLE FONTS LIBRARY ----- */
-/* ----- ROBOTO: BLACK ITALIC & REGULAR | LATO: LIGHT & REGULAR */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto:ital,wght@0,400;1,900&display=swap');
-
-/* ---- Custom Properties ----- */
 :root {
-	--hdr-bg-clr: #2156A1;
-	--sct-bg-clr: white;
-	--fnt-hdr-clr: white;
-	--fnt-bdy-clr: black;
-	--a-tag-clr: #2156A1;
-	--hdr-font: 'Lato', sans-serif;
-	--bdy-font: 'Roboto', sans-serif;
+	--font-main: 'Roboto', 'Helvetica', sans-serif; 
+	--font-hdr: 'Roboto Slab', 'Times New Roman', serif;
+	--small-text-size: .8rem;
+	--regular-text-size: 1rem;
+	--larger-text-size: 1.5rem;
 }
 
-/* ----- GLOBAL SELECTORS ----- */
 body {
-	background-color: var(--hdr-bg-clr);
 	margin: 0;
-	min-height: 100vh;
+	font-family: var(--font-main);
 }
 
-h1, h2 {
-	color: var(--fnt-hdr-clr);
-	text-align: center;
-	font-family: var(--hdr-font);
-	font-size: 5vw;
+h1 {
+	margin: 0%;
+	font-family: var(--font-hdr)
 }
 
-p {
-	font-family: var(--bdy-font);
-	font-size: 4vw;
+/* Design Classes */
+
+.bold {
+	font-weight: bold;
 }
 
-li {
-	font-family: var(--hdr-font);
-	font-weight: 300;
-	font-size: 3vw;
-	line-height: 5vh;
+.small-text {
+	font-size: var(--small-text-size)
 }
 
-a {
-	font-family: var(--bdy-font);
-	color: var(--a-tag-clr);
-	font-size: 4vw;
-}
-ul {
-	line-height: 150%;
+.regular-text {
+	font-size: var(--regular-text-size)
 }
 
-/* ----- HEADER SELECTORS ---- */
+.larger-text {
+	font-size: var(--larger-text-size)
+}
+
+.green-text {
+	color: green;
+}
+
+.visible {
+	transform: scale(1);
+}
+
+.invisible {
+	transform: scale(0);
+}
+/* --- Website Header --- */
+
 header {
 	display: flex;
-	flex-direction: row;
-	padding: 1%;
 	justify-content: space-between;
+	text-align: center;
+	font-family: var(--font-hdr)
 }
 
-#ZF-LOGO {
-	width: 50vw;
-	height: auto;
+/* Home Button */
+#logo{
+	align-items: center;
+	max-height: 15vw;
+	transition: transform .5s ease-in-out;
 }
 
-/* ----- NAV MENU ----- */
-#nav-menu-options {
-	list-style:none;
-	line-height: 150%;
+#home-anchor img:hover {
+	transform: scale(1.2)
+}
+/* Phone Number */
+#hdr-phn-nmbr {
+	align-self: center;
+	margin-right: 1%;
+}
+#hdr-phn-nmbr a {
+	text-decoration: none;
+}
+
+
+/* --- INDEX.HTML --- */
+#t-banner {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: green;
+	font-family: var(--font-hdr)
+}
+
+
+/* Call to Action */
+
+#cta {
+	background-image: url(/Resources/cta-background.jpg);
+	background-size: cover;
+	display: inline-grid;
+	grid-template-columns: 15% 15% 25% 25% 30%;
+	grid-template-rows: auto auto auto;
+	gap: 5%;	
+	padding-bottom: 10%;
+	width: 100%;
+}
+
+#cta * {
+	margin-left: 2%;
+}
+
+#cta-hdr {
+	grid-column: 1/3;
+	grid-row: 1/1;
+}
+
+#cta-sub-hdr {
+	grid-column: 1/3;
+	grid-row: 2/3
+}
+
+#cta-call-btn {
+	grid-column: 1/2;
+	grid-row: 3/4;
+}
+
+
+.cta-btn {
+	font-family: var(--font-main);
+	font-size: var(--larger-text-size);
+	font-weight: 700;
+	width: 100%;
+	height: 100%;
+	background-color: green;
+	border-radius: 12px;
+	border: none;
+	cursor: pointer;
+	transition: transform .5s ease-in-out;
+	padding: 10%;
+}
+
+.cta-btn:hover {
+	transform: scale(1.1)
+}
+
+
+/* Perks */
+#perks {
+	margin: 5%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+.perk-bubble {
+	background-color: transparent;
+	text-align: center;
+}
+
+.perk-i {
+	fill: green;
+	height: 75px;
+	width: 75px;
+}
+
+/* More Information */ 
+/* Check Marks for List */
+.check::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 50%;
+    width: 3px;
+    background-color: green;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+}
+
+.check::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: green;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+}
+
+
+/* Service Section Selectors */
+#services {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #f9f9f9;
+	padding-bottom: 4%;
+	padding-top: 4%;
+}
+
+#services li {
+	white-space: nowrap;
+	list-style: none;
+}
+
+#svc-lists {
+	display: flex;
+	flex-direction: row;
+	justify-items: center;
+	justify-content: space-evenly;
+}
+
+.svc-hdr {
+	text-align: center;
+}
+
+.check {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+	margin-right: 5%
+}
+
+
+/* Why Choose ZFIX Selectors */ 
+#why {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#why-hdr {
+	position: relative;
+	transition: all 1s ease-in-out;
+}
+
+#why-btn-cntnr {
+	position: relative;
+	transition: all 1s ease-out;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 25%;
+	height: 4vh;
+	background-color: green;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(50,50,50, .5);
+}
+
+#why-btn {
+	background-color: transparent;
+	border: none;
+	font-size: var(--larger-text-size)
+}
+
+/* Slide Show Selectors */
+#why-slide-cntnr {
+	position: relative;
+	transition: all 1s ease-in-out;
+	right: 105%;
+}
+
+.why-slide-desc::before {
+	content: '';
 	position: absolute;
 	right: 0%;
-	top: 0%;
-	white-space:nowrap;
-	font-size: 4vw;
-	background-color: var(--hdr-bg-clr);
-	padding: 5.5%;
-	margin: 0%;
-	display: none;
-	transition: 2s;
-	text-align: right;
-}
-#nav-menu-options a {
-	text-decoration: none;
-	color:var(--fnt-hdr-clr)
-}
-
-#closed_menu {
-	background-color:var(--hdr-bg-clr);
-	border: none;
-}
-#closed_menu img {
-	width: 8vw;
-}
-#closing-x {
-	text-align: right;
-}
-/* ----- FOOTER SELECTORS ----- */
-footer {
-	padding: 5% 1% 0% 1%;
-	font-size: 2vw;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-}
-
-footer a {
-	color:var(--hdr-bg-clr);
-}
-
-.footer-icons {
-	width: calc((17vw / 3))
-}
-
-/* ----- INDEX.HTML ----- */
-
-/* ----- SECTION SELECTORS ----- */
-#services-list {
-	padding: 10vh;
-	margin: 0%;
-}
-
-/* ----- LEARN MORE BUTTON ----- */
-#learn-more {
-	background-color: gray;
-	padding: 3%;
-	text-decoration: none;
-	box-shadow: 0px 0px 20px black;
-	margin-left: 4%;
-}
-
-/* ---- HOME.HTML ----- */
-
-/* ----- ZF-CF WELCOME SECTION ----- */
-
-#logo {
-	text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000; 
-}
-
-#welcome-container {
-	background-image:url('../Resources/skyscrapers.jpg');
-	background-repeat: no-repeat;
-	padding: 10%;
-}
-
-#welcome-container p {
-	text-align: center;
-	margin-top: 3%;
-	color: white;
-
-}
-
-#welcome-container h1 {
-	margin-top: 5%;
-	margin-bottom: 0%;
-	font-size:8vw;
-}
-
-/* ----- MENU BUTTONS ----- */
-#home-buttons-container {
-	display: flex;
-	flex-direction:column;
-}
-#home-buttons-container a {
-	padding: 5%;
-	color: var(--fnt-hdr-clr)
-}
-.home-button {
-	background-size: cover;
-	text-decoration: none;
-	font-size: xx-large;
-	text-align: center;
-	background-color: rgba(180,180,180,.90);
-	background-blend-mode:saturation;
-	transition-duration:1s;
-	font-weight: 900;
-}
-.home-button:hover {
-	background-color: rgba(130, 130, 130, 0.85);
-}
-
-#service-home-button {
-	background-image:url('../Resources/repairing-networks.jpg');
-}
-#contact-home-button {
-	background-image:url('../Resources/contact-us.jpg');
-	background-position-y: 60%;
-}
-#mission-home-button {
-	background-image:url('../Resources/our-mission.jpg');
-	background-position-y: 20%;
-}
-
-/* FEES & PRICING SECTION ---- */
-#pricing-list {
-	padding: 10%;
-}
-
-.pricelist_header {
-	font-family: 'Roboto', sans-serif;
-}
-
-/* ----- WARRANTY SECTION ----- */
-#warranty-container {
-	padding: 5%;	
-	text-align: center;
-}
-
-
-
-/* ----- SERVICES.HTML ----- */
-
-/* ----- HEADER SECTION  ----- */
-#services {
-	background-image:url('../Resources/repairing-networks.jpg');
-	flex-direction: column;
-}
-#services a, #services h1 {
-	display: flex;
-	justify-content:center;
-}
-
-#services h1 {
-	font-size: xxx-large;
-	margin-top: 0%;
-	padding-top: 5%;
-	text-shadow: 0px 0px 20px gray;
-}
-
-#services a {
-	background-color: rgba(195,195,195);
+	width: 100%;
+	height: 100%;
+	background-image: url(/Resources/computer-repair.jpg);
+	background-size:cover;
 	border-radius: 15px;
-	font-size: x-large;
+	filter:opacity(20%) grayscale(100%) saturate(100%)
+}
+
+.why-slide-desc {
+	text-align: center;
+	position: relative;
+	width: 98vw;
+	height:max-content;
+	display: flex;
+	align-items: center;
+	justify-content:space-evenly;
+	
+}
+
+.why-slide-cntnt {
+	border: 2vw solid #f9f9f9;
+}
+
+#why-slide-close-btn {
 	border: none;
-	padding:3%;
-	box-shadow: 0px 0px 20px gray;
-	transition: 1s;
-	color: white;
-	text-decoration: none;
-	width: 40%;
-	text-align:center;
-	margin-left:27vw;
-	white-space: nowrap;
-}
-#services a:hover {
-	background-color: rgba(170, 170, 170);
-}
-#services a:active {
-	background-color: rgba(90, 90, 90)
-}
-#spacer {
-	padding: 5%;
-}
-
-/* ----- PC REPAIR SECTION ----- */
-.pc-repair-container {
-	background:url('../Resources/pc-being-repaired.jpg');
-	display: flex;
-	padding: 10%;
-	justify-content: center;
-	white-space: nowrap;
-}
-
-/* ----- NETWORKING SECTION ----- */
-.networking-list-container {
-	background:url('../Resources/server-room-networking-equipment.jpeg');
-	display: flex;
-	padding: 10%;
-	justify-content: center;
-	white-space: nowrap;
-}
-
-/* ----- OTHER SECTION ----- */
-.other-list-container {
-	background:url('../Resources/pc-repair.jpg');
-	display: flex;
-	padding: 10%;
-	justify-content: center;
-	white-space: nowrap;
-}
-
-/* ---- GRAY FILTER ON BACKGROUND IMAGES ----- */
-.bg-img-gry-filter {
-	background-size: cover;
-	background-color: rgba(180,180,180,.90);
-	background-blend-mode:saturation;
-}
-
-/* ----- CONTACTS.HTML ----- */
-
-/* ----- HEADER ----- */
-.direct-contact-header-container { 
-	background:url('../Resources/contact-us.jpg');
-	padding: 2%;
-	background-position-y: 10%;
-}
-
-
-#direct-contact-header-container h1{
-	margin: 1%;
-}
-
-/* ----- HOURS OF OPERATION ----- */
-#contact-main-container{
-	display:flex;
-	flex-direction: column;
-}
-.contact-icon {
-	width: 9vw;
-}
-
-#contact-hours-container {
-	text-align: center;
-}
-
-.contact-info-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 5%;
-}
-.contact-info-container a{
-	color:var(--a-tag-clr);
-	text-decoration: none;
-	padding: 3%;
-}
-
-/* ----- SOCIAL MEDIA ----- */
-#social-media-container{
-	padding: 3%;
-	text-align: center;
-}
-#facebook-sm-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 3%;
-}
-#facebook-sm-container a{
-	color:var(--a-tag-clr);
-	text-decoration: none;
-	padding: 3%;
-}
-
-/* ----- MISSION.HTML ----- */
-.mission-header {
-	background:url('../Resources/our-mission.jpg');
-	background-position-y: 50%;
-	display: flex;
-	padding: 5%;
-	justify-content: center;
-	margin: 0%;
-}
-#mission-statement {
-	padding: 5% 15% 5% 15%;
-	margin-bottom: 0%;
-	text-align: center;
-}
-
-#how-sct {
-	text-align: center;
-	padding: 5% 15% 5% 15%;
-}
-/* ----- GLOBAL CLASSES ----- */
-.bg-img-gry-filter {
-	background-size: cover;
-	background-color: rgba(180,180,180,.90);
-	background-blend-mode:saturation;
-}
-
-.bg-blue {
-	background-color:var(--hdr-bg-clr);
-}
-
-.bg-white {
-	background-color:var(--sct-bg-clr);
-}
-.fnt-clr-black {
-	color:black;
-}
-
-@media screen and (min-width: 500px) {
-	p {
-		font-size: 3vw;
-	}
-}
-
-@media screen and (min-width: 1024px) {
-	p {
-		font-size: 2vw;
-	}
-}
-
-@media screen and (min-width: 1500px) {
-	p{
-		font-size: 1.5vw;
-	}
-	li {
-		font-size:2vw
-	}
-	a {
-		font-size: 2vw;
-	}
+	background-color: #d7d5d5;
+	width: 100%;
+	font-size: 1.4rem;
+	border-radius: 15px;
 }

@@ -1,148 +1,250 @@
+<!DOCTYPE html>
 <html lang='en'>
-<head>
-	<!--Charset-->
-	<meta charset="UTF-8">
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title></title>
+        <!-- Links to sheets. -->
+        <link rel='stylesheet' href='./CSS/style.css'>
+        <link rel='canonical' href='./index.html'>
 
-	<!-- Viewport -->
-	<meta content="width=device-width, initial-scale=1" 
-	name="viewport">
+        <!-- Icons -->
+        <!-- For IE 10 and below -->
+        <!-- Place favicon.ico in the root directory - no tag necessary -->
+        <!-- Icon in the highest resolution we need it for -->
+        <link rel='icon' sizes='192x192' href='./Resources/ZFix Icon.png'>
+        <!-- Apple Touch Icon (reuse 192px icon.png) -->
+        <link rel='apple-touch-icon' href='./Resources/ZFix Icon.png'>
+        <!-- Safari Pinned Tab Icon -->
+        <link rel='mask-icon' href='./Resources/ZFix Icon.png' color='green'>
 
-	<!-- Webpage Title -->
-	<title>ZF Computer Services | PC Repair & Technical Support </title>
+        <!-- Force IE 8/9/10 to use its latest rendering engine -->
+        <!-- Internet Explorer -->
+        <meta http-equiv='x-ua-compatible' content='ie=edge'>
+    </head>
 
-	<!-- Page Description -->
-	<meta content= 'ZF Computer Services | Home Page | Fast, Friendly, Local PC Repair & Technical Support'
-	name='description'>
-
-	<!-- Keywords for SEO -->
-	<meta content='pc repair, fix computer, computer repair, tech support, ZF Computer Services, ZF Comp Services' 
-	name='keywords'>
-
-	<!-- Links the canonical url-->
-	<link 
-	href='https://lilrebel17.github.io/ZF-Computer-Services/' 
-	rel="canonical">
-
-	<!-- Links my CSS Style Sheet-->
-	<link href="./CSS/style.css" rel="stylesheet">
-
-    <!-- Links to my JS -->
-    <link href='./JS/mobile-menu.js'>
-
-</head>
-<body>
-    <section>
-        <div id='welcome-container' class='bg-img-gry-filter'>
-            <h1 id='logo'>ZF Computer Services</h1>
-            <p>We offer fast, affordable 
-                electronics & PC repair
-                to keep you up and running with minimal
-                downtime. Produly serving upstate South
-                Carolina!
-            </p>
+    <body>
+        <header>
+                <img id='logo' src="./Resources/ZFix Logo.png">
+                <p id="hdr-phn-nmbr"><span class='bold regular-text'>Call Now!<br></span>
+                   <a href="tel:8644040591"><span class=' bold larger-text green-text'>(864)404-0591</span></a></p>
+        </header>
+        <div id="t-banner"> 
+            <h2>Proudly Serving Upstate SC!</h2>
+            <p><span class='bold larger-text'>-</span></p>
+            <h2>Professional & friendly service!</h2>
+            <p><span class='bold larger-text'>-</span></p>
+            <h2>Repairs tailored to YOU!</h2>
         </div>
-    </section>
-    <section>
-        <div id='home-buttons-container'>
-                <a 
-                href='services.html'
-                id='service-home-button'
-                class='home-button'
-                alt='Services Page'>
-                Services
-                </a>
+        <div id="cta">
+            <h1 id="cta-hdr">Having problems with your computer, phone or laptop?</h1>
+            <p id="cta-sub-hdr">
+                ZFIX specializes in computer, tablet and electronics repair!
+                We tailor every repair to<span class='bold'>YOUR NEEDS</span>.
+                Give us a call or text right now to talk to a tech and get your devices
+                back in working order!
+            </p> 
+            <a href="tel:8644040591" id="cta-call-btn">
+                <button type="button" class="cta-btn">Call Now!</button>
+            </a>
 
-                <a 
-                href='contact.html'
-                id='contact-home-button'
-                class='home-button'
-                alt='Contact Page'>
-                Contact Us
-                </a>
+        </div>
+        <section id="perks">
+            <div class="perk-bubble">
+                <i>
+                    <svg 
+                        class="perk-i"
+                        xmlns="http://www.w3.org/2000/svg" 
+                        aria-hidden="true" 
+                        role="img" 
+                        preserveAspectRatio="xMidYMid meet" 
+                        viewBox="0 0 384 512">
+                        <path 
+                            class="perk-i"
+                            d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0c106 0 192 85.96 192 192c0 87.4-117 243-168.3 307.2c-12.3 15.3-35.1 15.3-47.4 0zM192 256c35.3 0 64-28.7 64-64s-28.7-64-64-64s-64 28.7-64 64s28.7 64 64 64z"/>
+                    </svg>
 
-                <a 
-                href='mission.html'
-                id='mission-home-button'
-                class='home-button'
-                alt='Our Mission Page'>
-                Our Mission
-                </a>
-        </div>
-    </section>
-    <section>
-        <div id='base-price-container'>
-            <h2>
-                Fees & Pricing
-            </h2>
-        <ul id='pricing-list' class='bg-white'>
-        <div id='pc-repair-pricing-list'>
-                <li class='pricelist_header'>
-                    PC Repair
-                </li>
-            <ul>
-                <li>
-                    $25 Diagnosis fee
-                </li>
-                <li>Price of parts & labor</li>
-            </ul>
-        </div>
-        <div id='networking-repair-pricing-list'>
-            <li class='pricelist_header'>
-                Networking
-            </li>
-            <ul>
-                <li>
-                Wifi Diagnosis: $15/hr
-                </li>
-                <li>
-                Equipment Install: $20/hr + Equipment
-                </li>
-                <li>
-                Cabling Installation: $20/hr + Materials
-                </li>
-            </ul>
-        </div>
-        </ul>
-        </div>
-    </section>
-    <section>
-        <h2>Our Warranty</h2>
-        <div id='warranty-container' class='bg-white'>
-            <p>
-                We offer a 14 day warranty on all
-                repairs.<br> If a part concerning
-                our repair was to be<br> defective
-                or bad after our repair,<br> we will 
-                replace it completley free.
-            </p>
-        </div>
-    </section>
-    <footer>
-        <p>Zachary Farmer DBA<br> 
-            ZF Computer Services</p>
-        <div id='footer-container'>
-		<a href='mailto:zfcomputerservices@gmail.com'>
-			<img 
-			class='footer-icons'
-			src='./Resources/gmail-icon.png'
-			alt='Black Email Icon'
-			title='Send us an Email'>
-		</a>
-		<a href='tel:8644040591'>
-			<img
-			class='footer-icons'
-			src='./Resources/phone-icon.png'
-			alt='Black Phone Icon'
-			title='Give us a call at (864)404-0591'>
-		</a>
-		<a href='https://www.facebook.com/zfcomputerservices'>
-			<img 
-			class='footer-icons'
-			src='./Resources/facebook-icon.png'
-			alt='Facebook Icon'
-			title='Check us out on facebook @zfcomputerservices'>
-		</a>
-        </div>
-	</footer>
-</body>
+                </i>
+                <p class="bold">Located in Easley, SC!</p>
+            </div>
+            <div class="perk-bubble">
+                <i>
+                    <svg 
+                        class="perk-i"
+                        xmlns="http://www.w3.org/2000/svg" 
+                        aria-hidden="true" 
+                        role="img" 
+                        preserveAspectRatio="xMidYMid meet" 
+                        viewBox="0 0 16 16">
+                        <path 
+                            class="perk-i" 
+                            d="M6.756 7.024L7.83 6.04a2 2 0 0 0 .52-2.176l-.458-1.223a1.916 1.916 0 0 0-2.354-1.16c-1.716.525-3.035 2.12-2.629 4.014c.267 1.246.778 2.81 1.746 4.474c.97 1.668 2.078 2.9 3.028 3.766c1.434 1.305 3.484.979 4.803-.251a1.899 1.899 0 0 0 .171-2.596l-.84-1.02A2 2 0 0 0 9.67 9.23l-1.388.437a6.63 6.63 0 0 1-.936-1.223a6.269 6.269 0 0 1-.59-1.421Z"/></svg>
+                </i>
+                <p class="bold">Call or text anytime to get a quote!</p>
+            </div>
+            <div class="perk-bubble">
+                <i>
+                    <svg 
+                        class="perk-i"
+                        xmlns="http://www.w3.org/2000/svg" 
+                        aria-hidden="true" 
+                        role="img" 
+                        preserveAspectRatio="xMidYMid meet" 
+                        viewBox="0 0 24 24">
+                            <path 
+                                fill="none" 
+                                stroke="green" 
+                                stroke-linecap="round" 
+                                stroke-linejoin="round" 
+                                stroke-width="4" d="m4 12l6 6L20 6"/>
+                    </svg>
+                </i>
+                <p class="bold">Get a personalized repair plan!</p>
+            </div>
+        </section>
+        <section id="services">
+            <div class="svc-hdr">
+                <h1>What can ZFIX do for you?</h1>
+                <h3>
+                    We offer a wide variety of elecroincs repair services including
+                    but not limited to
+                </h3>
+            </div>
+            <div id="svc-lists">
+                <ul>
+                    <li>
+                        <div class="check"></div>
+                        Computer Repair
+                    </li>
+                    <li>
+                        <div class="check"></div>
+                        Phone Repair
+                    </li>
+                    <li>
+                        <div class="check"></div>
+                        Tablet Repair
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="check"></div>
+                        Virus Removal
+                    </li>
+                    <li>
+                        <div class="check"></div>
+                        Spyware Removal
+                    </li>
+                    <li>
+                        <div class="check"></div>
+                        Malware Removal
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="check"></div>
+                        Screen Replacements
+                    </li>
+                    <li>
+                        <div class="check"></div>
+                        PC Maintentance
+                    </li>
+                    <li>
+                        <div class="check"></div>
+                        Speed up slow PCs
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="check"></div>
+                        Custom PC Builds
+                    </li>
+                    <li>
+                        <div class="check"></div>
+                        PC Upgrades
+                    </li>
+                    <li>
+                        <div class="check"></div>
+                        Device Setup
+                    </li>
+                </ul>
+            </div>
+            </section>
+            <section id="why">
+                    <h1 id="why-hdr">Why Choose ZFIX?</h1>
+                <div id="why-btn-cntnr">
+                    <button type ="button" id="why-btn"><span class='bold'>More Info</span></button>
+                </div>
+                <div id="why-slide-cntnr" class="invisible">
+                        <div class="why-slide-desc">
+                            <div class="why-slide-cntnt slide-pos-prev" id="why-slide-1">
+                                <h1>TAILORED TO YOU</h1>
+                                <p>
+                                    I hate those shops that you walk into, get charged
+                                    $60 bucks just to drop your machine off then have
+                                    to deal with whatever price they decide. We want
+                                    to be able to fix your issues and tailor the 
+                                    experience to you. We dont care if you are on
+                                    a budget, if your needing it done in a hurry
+                                    or whatever the case may be. We want to be 
+                                    your computer people, if you have issues 
+                                    we want to be the first person you think of,
+                                    and we dont think we can do that if your just
+                                    another number.
+                                </p>
+                            </div>
+                            <div class="why-slide-cntnt" id="why-slide-2">
+                                <h1>QUALITY SERVICES</h1>
+                                <p>
+                                    I have years of experience in commercial, residential, 
+                                    and K12 computer repairs. Alongside that, I have been 
+                                    in the IT field in a professional capacity for over five 
+                                    years. So, your able to rest assured if you bring 
+                                    your device into me to be repaired that you are 
+                                    receiving professional service from someone with 
+                                    plenty of experience. I have over four years as a 
+                                    certified technician for multiple PC manufacturers 
+                                    including Dell and Lenovo. My goal with every repair 
+                                    is to give your device back to you as close to off the 
+                                    factory line as I possibly can.
+                                </p>
+                            </div>
+                            <div class="why-slide-cntnt" id="why-slide-3">
+                                <h1>TRANSPARENCY</h1>
+                                <p>
+                                    With everyone that comes in Fix tries to be transparent 
+                                    throughout the entire process. I dont want you spending 
+                                    your money on something you feel you dont need. Fix will 
+                                    offer recommendations and walk you through what exactly 
+                                    were going to do with your device from start to finish. 
+                                    While other shops will just take your device, charge 
+                                    you whatever they feel and expect you to pay it we go 
+                                    for a much different approach. Before any parts are 
+                                    ordered, or any bills for any repairs are charged, you 
+                                    are informed way ahead of time as to the options you have 
+                                    to either repair or replace your device.
+                                </p>
+                            </div>
+                        </div>
+                        <div id="why-slide-btn-cntnr">
+                            <!-- <button 
+                                type="button" 
+                                class="why-slide-btn" 
+                                id="why-slide-back-arrow">Back</button>
+                            -->
+                            <button
+                            type="button" 
+                            class="why-slide-btn"
+                            id="why-slide-close-btn">Close</button>
+                            <!-- <button 
+                                type="button" 
+                                class="why-slide-btn" 
+                                id="why-slide-next-arrow">Next</button>
+                            -->
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- Link JS, keep at bottom -->
+        <script src='./JS/services.js'></script>
+    </body>
 </html>
