@@ -36,7 +36,7 @@
             <p><span class='bold larger-text'>-</span></p>
             <h2>Repairs tailored to YOU!</h2>
         </div>
-        <div id="cta">
+        <section id="cta">
             <h1 id="cta-hdr">Having problems with your computer, phone or laptop?</h1>
             <p id="cta-sub-hdr">
                 ZFIX specializes in computer, tablet and electronics repair!
@@ -48,9 +48,9 @@
                 <button type="button" class="cta-btn">Call Now!</button>
             </a>
 
-        </div>
+        </section>
         <section id="perks">
-            <div class="perk-bubble">
+            <div class="perk-cntnr">
                 <i>
                     <svg 
                         class="perk-i"
@@ -67,7 +67,7 @@
                 </i>
                 <p class="bold">Located in Easley, SC!</p>
             </div>
-            <div class="perk-bubble">
+            <div class="perk-cntnr">
                 <i>
                     <svg 
                         class="perk-i"
@@ -82,7 +82,7 @@
                 </i>
                 <p class="bold">Call or text anytime to get a quote!</p>
             </div>
-            <div class="perk-bubble">
+            <div class="perk-cntnr">
                 <i>
                     <svg 
                         class="perk-i"
@@ -170,11 +170,13 @@
             </div>
             </section>
             <section id="why">
-                    <h1 id="why-hdr">Why Choose ZFIX?</h1>
-                <div id="why-btn-cntnr">
-                    <button type ="button" id="why-btn"><span class='bold'>More Info</span></button>
+                <div id="why-hdr">
+                    <h1 id="why-h1" class="visible">Why Choose ZFIX?</h1>
+                    <div id="why-btn-cntnr" class='visible'>
+                        <button type ="button" id="why-btn"><span class='bold'>More Info</span></button>
+                    </div>
                 </div>
-                <div id="why-slide-cntnr" class="invisible">
+                <div id="why-slide-cntnr">
                         <div class="why-slide-desc">
                             <div class="why-slide-cntnt slide-pos-prev" id="why-slide-1">
                                 <h1>TAILORED TO YOU</h1>
@@ -226,23 +228,28 @@
                             </div>
                         </div>
                         <div id="why-slide-btn-cntnr">
-                            <!-- <button 
-                                type="button" 
-                                class="why-slide-btn" 
-                                id="why-slide-back-arrow">Back</button>
-                            -->
                             <button
                             type="button" 
                             class="why-slide-btn"
                             id="why-slide-close-btn">Close</button>
-                            <!-- <button 
-                                type="button" 
-                                class="why-slide-btn" 
-                                id="why-slide-next-arrow">Next</button>
-                            -->
                         </div>
                     </div>
                 </div>
+        </section>
+        <section id="contact">
+            <h1>How to Contact</h1>
+            <h2>Calls will only be awnsered between 7AM to 6PM</h2>
+            <h2>Emails/Text can be awnsered anytime</h2>
+            <div id="contact-content-cntnr">
+                <div id="telephone-contact">
+                    <h3>Telephone</h2>
+                    <a href="tel:8644040591" class="contact-a">(864)404-0591</a>
+                </div>
+                <div id="email-contact">
+                    <h3>Email</h2>
+                    <a href="mailto:zfcomputerservices@gmail.com" class="contact-a">zfcomputerservices@gmail.com</a>
+                </div>
+            </div>
         </section>
         <!-- Link JS, keep at bottom -->
         <script src='./JS/services.js'></script>
