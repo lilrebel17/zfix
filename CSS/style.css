@@ -6,11 +6,11 @@
 
 /* ---- Custom Properties ----- */
 :root {
-	--hdr-bg-clr: #2156A1;
+	--hdr-bg-clr: green;
 	--sct-bg-clr: white;
 	--fnt-hdr-clr: white;
 	--fnt-bdy-clr: black;
-	--a-tag-clr: #2156A1;
+	--a-tag-clr: green;
 	--hdr-font: 'Lato', sans-serif;
 	--bdy-font: 'Roboto', sans-serif;
 }
@@ -59,7 +59,7 @@ header {
 }
 
 #ZF-LOGO {
-	width: 50vw;
+	width: 30vw;
 	height: auto;
 }
 
@@ -134,11 +134,10 @@ footer a {
 /* ----- ZF-CF WELCOME SECTION ----- */
 
 #logo {
-	text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000; 
+	display: block;
+	width: 50vw;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #welcome-container {
@@ -393,6 +392,9 @@ footer a {
 	p {
 		font-size: 2vw;
 	}
+	#ZF-LOGO {
+		width: 25vw;
+	}
 }
 
 @media screen and (min-width: 1500px) {
@@ -404,5 +406,8 @@ footer a {
 	}
 	a {
 		font-size: 2vw;
+	}
+	#logo {
+		width: 30vw;
 	}
 }
