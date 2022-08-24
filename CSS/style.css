@@ -45,6 +45,7 @@ a {
 	font-family: var(--bdy-font);
 	color: var(--a-tag-clr);
 	font-size: 4vw;
+	text-decoration: none;
 }
 ul {
 	line-height: 150%;
@@ -144,6 +145,7 @@ footer a {
 	background-image:url('../Resources/skyscrapers.jpg');
 	background-repeat: no-repeat;
 	padding: 10%;
+	text-align: center;
 }
 
 #welcome-container p {
@@ -151,6 +153,14 @@ footer a {
 	margin-top: 3%;
 	color: white;
 
+}
+
+#landing-contact {
+	text-align: center;
+}
+
+#a-learn-more {
+	text-align: center;
 }
 
 #welcome-container h1 {
@@ -206,9 +216,7 @@ footer a {
 /* ----- WARRANTY SECTION ----- */
 #warranty-container {
 	padding: 5%;	
-	text-align: center;
 }
-
 
 
 /* ----- SERVICES.HTML ----- */
