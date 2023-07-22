@@ -21,14 +21,14 @@ p {font-family: var(--font-body);}
 /* --- Animations --- */
 @keyframes text-scroll-left {
 	0% {
-		transform :translateX(95%);
-		-moz-transform: translateX(95%);
-		-webkit-transform: translateX(95%);
+		transform :translateX(150%);
+		-moz-transform: translateX(150%);
+		-webkit-transform: translateX(150%);
 	}
 	100% {
-		transform: translateX(-85%);
-		-moz-transform: translateX(-85%);
-		-webkit-transform: translateX(-85%);
+		transform: translateX(-150%);
+		-moz-transform: translateX(-150%);
+		-webkit-transform: translateX(-150%);
 	}
 }
 
