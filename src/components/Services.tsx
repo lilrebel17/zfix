@@ -2,7 +2,7 @@ import '../global.css'
 
 const Services = () => {
     return (
-        <section className="container-fluid text-center fs-6 bg-soft-gray pt-3">
+        <section className="container-fluid text-center fs-6 bg-soft-gray pt-3" id='services'>
             <h2 className="h2"><b>What do we do?</b></h2>
             <section>
                 <h3 className="h3"><b>Computer Repair</b></h3>

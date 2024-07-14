@@ -2,7 +2,7 @@ import React from "react";
 import '../global.css'
 const Header = () => {
     return(
-        <div className="container-fluid mb-0 text-center fs-6 mb-1 p-0">
+        <div className="container-fluid mb-0 text-center fs-6 mb-1 p-0" id="home">
             <div className="text-center bg-green text-white m-0 pb-2">
                 <span>Proudly Serving Upstate South Carolina!</span>
                 <br/>

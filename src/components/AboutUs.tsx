@@ -3,7 +3,7 @@ import '../global.css'
 
 const AboutUs = () => {
     return (
-        <section className="container-fluid text-center mt-1">
+        <section className="container-fluid text-center mt-1" id='about-us'>
             <h2><b>About Us</b></h2>
             <p> 
             Founded by an experienced IT professional specializing in hardware repair and systems administration, we operate from a home-based workshop, 
