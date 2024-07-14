@@ -3,7 +3,7 @@ import '../global.css'
 
 const AboutUs = () => {
     return (
-        <div className="text-center mt-1">
+        <section className="container-fluid text-center mt-1">
             <h2><b>About Us</b></h2>
             <p> 
             Founded by an experienced IT professional specializing in hardware repair and systems administration, we operate from a home-based workshop, 
@@ -12,7 +12,7 @@ const AboutUs = () => {
             As a local business, we prioritize building lasting relationships through transparent service and competitive pricing. 
             Trust <span className="text-green"><b>Z-FIX</b></span> for reliable, professional tech repairs.
             </p>
-        </div>
+        </section>
     )
 }
 
