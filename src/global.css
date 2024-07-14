@@ -1,0 +1,13 @@
+:root {
+    --bg-primary-green: rgb(25, 135, 84);
+    --soft-white: #F5F5F5;
+    --soft-gray: #DEE2E6;
+}
+
+.bg-green {background-color: var(--bg-primary-green);}
+.text-green {color: var(--bg-primary-green);}
+
+.bg-soft-gray {background-color: var(--soft-gray);}
+.bg-soft-white {background-color: var(--soft-white);}
+
+body {background-color: var(--soft-white);}

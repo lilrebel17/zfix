@@ -11,7 +11,7 @@
 <br />
 <div align="center">
   <a href="https://www.zfixsc.us">
-    <img src="/mnt/aaaf1126-b06e-4f02-b794-bbb61d856b58/Coding Projects/zfix/public/resources/ZFix Logo.png" alt="Logo" width="120" height="120">
+    <img src="./public/resources/ZFix Logo.png" alt="Logo" width="120" height="120">
   </a>
   <p align="center">
     A website for an electronics repair business based in Easley, SC 
